@@ -15,6 +15,7 @@ find ./lambda-code/ -name "*.py" | xargs cp -t deployment-artefact
 cd terraform_code
 
 # Run with "--auto-approve" option when you are comfortable with the automation, this way it will directly start deployment process
+terraform init # normally required for the first time only but no harm in doing again
 terraform apply
 
 # Finally delete the temporary directory
