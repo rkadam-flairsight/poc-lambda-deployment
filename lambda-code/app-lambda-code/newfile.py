@@ -1,0 +1,1 @@
+print("This file is checking that if i add new file, does the automation automatically pics it up ?")
