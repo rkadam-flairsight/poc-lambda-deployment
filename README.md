@@ -19,4 +19,4 @@ Internally it will create a temp folder, copy all python files in that folder an
 2. When any file content is changed the lambda corresponding to that file will get updated with latest code, thus it can be used as automated deployment tool. (Put it in CI and you have your CICD tool which can run on github webhook)
 
 ## Limitations
-It is assumed that the networking configuration, lambda env variable and IAM permissions are same for all the lambda. Ifit is different then we have to create a map or local variable for the same and accordingly loop on it to create lambda resources.
+It is assumed that the networking configuration, lambda env variable and IAM permissions are same for all the lambda. Ifit is different then we have to create a map or local variable for the same and accordingly loop on it to create lambda resources. (check terraform_code/lambda.tf)
